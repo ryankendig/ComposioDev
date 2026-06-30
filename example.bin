@@ -1,0 +1,12 @@
+## example.bin
+
+Base64-encoded binary (71 bytes):
+
+```
+QklOMQE8AEhlbGxvIGZyb20gZXhhbXBsZS5iaW4gLSB0aGlzIGlzIHNhbXBsZSBiaW5hcnkgcGF5bG9hZCBkYXRhLm9c78M=
+```
+
+Decode:
+```bash
+echo 'QklOMQE8AEhlbGxvIGZyb20gZXhhbXBsZS5iaW4gLSB0aGlzIGlzIHNhbXBsZSBiaW5hcnkgcGF5bG9hZCBkYXRhLm9c78M=' | base64 -d > example.bin
+```
