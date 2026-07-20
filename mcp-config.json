@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "amplitude": {
+      "type": "http",
+      "url": "https://mcp.amplitude.com/mcp",
+      "description": "Amplitude analytics MCP server for behavioral insights"
+    },
+    "amplitude-clickup-integration": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "description": "Local integration service connecting Amplitude with ClickUp",
+      "env": {
+        "AMPLITUDE_API_URL": "https://mcp.amplitude.com/mcp",
+        "AMPLITUDE_REGION": "US",
+        "CLICKUP_API_KEY": "${CLICKUP_API_KEY}",
+        "CLICKUP_WORKSPACE_ID": "${CLICKUP_WORKSPACE_ID}",
+        "SYNC_INTERVAL_MINUTES": "60",
+        "LOG_LEVEL": "info"
+      }
+    }
+  }
+}
