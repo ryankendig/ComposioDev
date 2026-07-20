@@ -1,0 +1,17 @@
+# OAuth Outlook Token Refresh - Python Dependencies
+#
+# This implementation uses only Python standard library modules
+# (json, time, datetime, urllib) to minimize dependencies.
+#
+# Optional dependencies for enhanced functionality:
+
+# For production use with better HTTP handling:
+# requests>=2.31.0
+
+# For secure token storage:
+# cryptography>=41.0.0
+
+# For testing:
+# pytest>=7.4.0
+# pytest-mock>=3.11.0
+# responses>=0.23.0
